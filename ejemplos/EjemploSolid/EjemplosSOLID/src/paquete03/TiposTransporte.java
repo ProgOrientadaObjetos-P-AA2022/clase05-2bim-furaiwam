@@ -14,8 +14,8 @@ public class TiposTransporte {
     private TransporteTaxi ttaxi;
     private TransporteBus ttbus;
     private TransporteTransvia transvia;
-    private TransporteAereo aereo;
-    private TransporteMaritimo maritimo;
+    /*private TransporteAereo aereo;
+    private TransporteMaritimo maritimo;*/
     
     public void establecerTransporteTaxi(TransporteTaxi taxi){
         ttaxi = taxi;
@@ -24,10 +24,11 @@ public class TiposTransporte {
     public void establecerTransporteBus(TransporteBus bus){
         ttbus = bus;
     }
-    
+
     public TransporteTaxi obtenerTransporteTaxi(){
         return ttaxi;
     }
+    
     
     public TransporteBus obtenerTransporteBus(){
         return ttbus;
@@ -41,6 +42,22 @@ public class TiposTransporte {
     
     public double obtenerPromedioTarifas(){
         return promedioTarifas;
+    }
+        public void establecerTransporteTransvia(TransporteTransvia tansv){
+        transvia = tansv;
+    }
+        public TransporteTransvia obtenerTransporteTransvia(){
+        return transvia;
+    }
+
+    void establecerTransporteTransvia() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    private static class TransporteTransvia {
+
+        public TransporteTransvia() {
+        }
     }
     
     

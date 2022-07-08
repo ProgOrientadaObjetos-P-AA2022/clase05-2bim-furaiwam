@@ -45,4 +45,12 @@ public class Persona {
         promedio = suma/lista.size();
         return promedio;
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                '}';
+    }
 }

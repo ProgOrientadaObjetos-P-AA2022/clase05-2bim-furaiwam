@@ -21,8 +21,9 @@ public class Principal {
         tipos.establecerTransporteBus(bus);
         tipos.establecerTransporteTaxi(taxi);
         tipos.establecerPromedioTarifas();
-        
+        tipos.establecerTransporteTransvia();
         System.out.printf("Promedio de Tarifas: %.2f", 
+                tipos.obtenerTransporteTransvia(),
                 tipos.obtenerPromedioTarifas());
         
     }
